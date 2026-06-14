@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1125" role="img" aria-labelledby="title desc">
+  <title id="title">个人主页视觉头像</title>
+  <desc id="desc">由几何色块和字母 T 组成的个人主页头像。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6efe1"/>
+      <stop offset="0.46" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dfeee8"/>
+    </linearGradient>
+    <linearGradient id="shape" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f6f5f"/>
+      <stop offset="1" stop-color="#1d3e4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1125" fill="url(#bg)"/>
+  <circle cx="760" cy="180" r="120" fill="#d8a13c" opacity="0.72"/>
+  <circle cx="130" cy="920" r="180" fill="#d86f51" opacity="0.2"/>
+  <path d="M106 327c112-160 270-229 431-198 141 28 254 138 295 271 46 149-1 322-128 433-121 106-303 138-449 75C93 837 8 682 33 524c11-72 37-137 73-197z" fill="#ffffff" opacity="0.78"/>
+  <path d="M185 720c110 112 288 143 432 75 118-56 190-165 210-288 13 47 18 99 12 151-22 195-183 352-382 371-149 15-292-44-386-154 28-66 66-117 114-155z" fill="#2f6f5f" opacity="0.14"/>
+  <rect x="250" y="328" width="400" height="92" rx="22" fill="url(#shape)"/>
+  <rect x="402" y="390" width="96" height="390" rx="26" fill="url(#shape)"/>
+  <path d="M295 846h310" stroke="#d86f51" stroke-width="24" stroke-linecap="round"/>
+  <path d="M338 900h224" stroke="#d8a13c" stroke-width="18" stroke-linecap="round"/>
+</svg>
