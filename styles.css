@@ -111,8 +111,8 @@ main,
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.72fr);
-  gap: clamp(28px, 5vw, 68px);
+  grid-template-columns: minmax(0, 1.35fr) minmax(360px, 0.85fr);
+  gap: clamp(28px, 4vw, 56px);
   align-items: start;
   padding: 72px 0 44px;
 }
@@ -233,7 +233,9 @@ h3 {
 
 .profile-panel {
   display: grid;
-  gap: 16px;
+  grid-template-columns: minmax(170px, 200px) minmax(170px, 1fr);
+  gap: 14px;
+  align-items: start;
 }
 
 .portrait,
@@ -249,8 +251,9 @@ h3 {
 
 .portrait {
   overflow: hidden;
+  width: 100%;
   aspect-ratio: 4 / 5;
-  border-radius: 18px;
+  border-radius: 14px;
 }
 
 .portrait img {
@@ -262,11 +265,11 @@ h3 {
 
 .profile-facts {
   display: grid;
-  gap: 12px;
-  padding: 22px;
+  gap: 10px;
+  padding: 16px;
   background: rgba(255, 255, 255, 0.84);
   border: 1px solid rgba(36, 56, 77, 0.08);
-  border-radius: 18px;
+  border-radius: 14px;
 }
 
 .profile-facts div {
@@ -284,7 +287,8 @@ h3 {
 
 .profile-facts dd {
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
+  line-height: 1.45;
 }
 
 .metrics {
@@ -455,6 +459,11 @@ h3 {
   .hero {
     padding-top: 48px;
   }
+
+  .profile-panel {
+    grid-template-columns: 180px minmax(0, 1fr);
+    max-width: 520px;
+  }
 }
 
 @media (max-width: 760px) {
@@ -475,6 +484,10 @@ h3 {
 
   .metrics strong {
     font-size: 30px;
+  }
+
+  .profile-panel {
+    grid-template-columns: 150px minmax(0, 1fr);
   }
 
   .publication-list {
@@ -506,5 +519,22 @@ h3 {
 
   .button {
     width: 100%;
+  }
+
+  .profile-panel {
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .profile-facts {
+    padding: 12px;
+  }
+
+  .profile-facts dt {
+    font-size: 10px;
+  }
+
+  .profile-facts dd {
+    font-size: 12px;
   }
 }
